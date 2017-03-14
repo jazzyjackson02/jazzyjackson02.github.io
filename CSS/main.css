@@ -1,23 +1,43 @@
-img {
-  width: 400px;
-}
+/* header */
 
+
+
+/* all over css */
+
+img {
+    height: 150px;
+}
 h1{
   font:50px 'Lobster', cursive;
   color: rgb(50,150,200);
+    text-align: center;
 }
 
 h2, h3{
   font: 20px 'Rubik Mono One', sans-serif;
+    text-align: center;
   
+}
+
+body{
+    width: 80%;
+    margin: auto;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
-  max-width:50%;
+    text-align: center;
+    margin: auto;
+}
+
+
+ul {
+   list-style-type: none; 
+    margin: auto;
 }
 li {
-  font-family: arial, sans-serif;
+    display:inline-block;
+    font-family: arial, sans-serif;
 }
 
 
@@ -27,6 +47,17 @@ a:link {
 
 a:visited {
     color: green;
+}
+
+
+@media (min-width:800px){
+    
+    
+    
+    
+    
+    
+    
 }
   
  /*font-family: 'Rubik Mono One', sans-serif;
