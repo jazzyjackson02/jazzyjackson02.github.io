@@ -1,8 +1,15 @@
 
 h1{
-  font:50px 'Lobster', cursive;
+  font:3em 'Lobster', cursive;
   color: rgb(50,150,200);
     text-align: center;
+    width: 75%;
+    background: #fff;
+    margin: 10px auto;
+    
+}
+body {
+    background: #099;
 }
 
 h2, h3{
@@ -14,17 +21,22 @@ h2, h3{
 p {
   font-family: 'Montserrat', sans-serif;
     color: #333;
-  max-width:600px;
-    margin: auto;
+    max-width: 100%;
+    font-size: 16px;
+    padding: 5px;
 }
 li {
     list-style-type: none;
-  font: 20px 'Rubik Mono One', sans-serif;   
+  font: 20px 'Rubik Mono One', sans-serif;  
+    align-items: center;
+    text-align: center;
 }
 
 
 /*------Links-----*/
-
+a {
+    cursor: pointer;
+}
 /* unvisited link */
 a:link {
     color: #C36;
@@ -56,7 +68,9 @@ a:active {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-    width: 100%
+    width: 100%;
+  background-image: linear-gradient(#099, #C36, #099);   
+    z-index: 1000;
 }
 
 .main-nav img {
@@ -70,15 +84,23 @@ a:active {
     
 }
 
-/*------Profile------*/
-
-.profile{
-    width:70%;
-    margin: 0 auto;
+.main-nav li {
+    padding: 10px;
 }
 
+/*------Profile------*/
+
+.main {
+    background: #fff;
+    width:85%;
+    margin: auto;
+}
+
+
+
+
 .name {
-    background-image: linear-gradient(#099, #C36);
+    
     padding: 15px;
     line-height: 15px;
    } 
@@ -86,17 +108,53 @@ a:active {
 .name img  {
     display:block;
     margin: auto;
-    border-radius: 30%;
-    padding:15px;
+    max-width: 75%;
+    margin-top: -40px;
+    margin-bottom: 70px;
+    border: 10px solid #099;
+    z-index: 0;
+} 
+
+
+/* --- my attempt at makingthe shape I was looking for. Looking online, it seems there are some more advanced things that I could look into to better create what I am looking for. Probably will work more on it in the future ---- */
+
+
+.tilt img {
+  transform: rotate(45deg);
+    border-top-left-radius: 300px;
+    
 }
+
+
+
 .name ul {
     padding: 10px
+}
+
+.name h3{
+    margin:auto;
+}
+
+
+.profile img {
+    width: 300px;
+    max-width: 75%;
+    padding: 10px;
+}
+
+.profile ul {
+    padding: 0;
+}
+
+.profile h2 {
+    word-spacing: -7px;
 }
 /*------Footer-----*/
 
 .social {
   display: flex;
   flex-flow: row;
+    justify-content: center;
   align-items: center;
 }
 
@@ -120,7 +178,7 @@ a:active {
         flex-flow:row;
         margin-bottom: 20px;
         position:fixed;
-        background:#fff;
+        background-image: linear-gradient(#099, #C36, #099);
         box-shadow: 0 1px 4px rgba (0,0,0,.4);
         top:0;
         width:100%;
@@ -132,16 +190,34 @@ a:active {
     }
     
     .main-nav img {
-        max-width: 250px;
+        max-width: 125px;
         padding: 15px;
         
     }
 
     body {
-   padding-top: 300px;  
+   padding-top: 150px;   
     
-}
- 
+    }
+    
+    .profile{
+    width:70%;
+    margin: 0 auto;
+    }
+    
+    .profile ul {
+    display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .profile img{
+        padding: 0;
+                
+    }
+    
+    
 }
 
 /* img:hover {
