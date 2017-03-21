@@ -116,7 +116,7 @@ a:active {
 } 
 
 
-/* --- my attempt at makingthe shape I was looking for. Looking online, it seems there are some more advanced things that I could look into to better create what I am looking for. Probably will work more on it in the future ---- */
+/* --- my attempt at making the shape I was looking for. Looking online, it seems there are some more advanced things that I could look into to better create what I am looking for. Probably will work more on it in the future ---- */
 
 
 .tilt img {
@@ -138,13 +138,14 @@ a:active {
 
 .profile img {
     width: 300px;
-    max-width: 75%;
+    max-width: 100%;
     padding: 10px;
 }
 
 .profile ul {
     padding: 0;
 }
+
 
 .profile h2 {
     word-spacing: -7px;
@@ -208,7 +209,7 @@ a:active {
     .profile ul {
     display: inline-flex;
         flex-direction: row;
-        align-items: center;
+        justify-content: space-around;
         width: 100%;
     }
     
@@ -216,7 +217,10 @@ a:active {
         padding: 0;
                 
     }
-    
+    .aboutme {
+        max-width: 800px;
+        
+    }
     
 }
 
